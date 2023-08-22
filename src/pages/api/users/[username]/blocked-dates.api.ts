@@ -14,7 +14,7 @@ export default async function handler(
   const { year, month } = req.query
 
   if (!year || !month) {
-    return res.status(400).json({ message: 'Year or month not specified.' })
+    return res.status(400).json({ message: 'Month or year not specified.' })
   }
 
   const user = await prisma.user.findUnique({
