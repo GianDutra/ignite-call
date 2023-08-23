@@ -18,6 +18,10 @@ export const Container = styled(Box, {
       false: {
         width: 540,
         gridTemplateColumns: '1fr',
+
+        '@media(max-width: 900px)': {
+          width: 330,
+        },
       },
     },
   },
@@ -33,6 +37,14 @@ export const TimePicker = styled('div', {
   bottom: 0,
   right: 0,
   width: 280,
+
+  '@media(max-width: 900px)': {
+    overflow: 'visible',
+    width: 250,
+    display: 'flex',
+    position: 'relative',
+    flexDirection: 'column',
+  },
 })
 
 export const TimePickerHeader = styled(Text, {
@@ -50,7 +62,8 @@ export const TimePickerList = styled('div', {
   gap: '$2',
 
   '@media (max-width: 900px)': {
-    gridTemplateColumns: '2fr',
+    gridTemplateColumns: '3fr',
+    gap: '20px',
   },
 })
 
