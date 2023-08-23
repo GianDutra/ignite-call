@@ -30,11 +30,11 @@ export default async function handler(
     email: z.string().email(),
     observations: z.string(),
     date: z.string().datetime(),
+    userTimeZone: z.number(),
   })
 
-  const { name, email, observations, date } = createSchedulingBody.parse(
-    req.body,
-  )
+  const { name, email, observations, date, userTimeZone } =
+    createSchedulingBody.parse(req.body)
 
   const schedulingDate = dayjs(date).startOf('hour')
 
@@ -62,7 +62,7 @@ export default async function handler(
       name,
       email,
       observations,
-      date: schedulingDate.toDate(),
+      date: schedulingDate.subtract(userTimeZone, 'hour').toDate(),
       user_id: user.id,
     },
   })

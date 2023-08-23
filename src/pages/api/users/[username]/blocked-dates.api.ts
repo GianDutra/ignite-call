@@ -54,6 +54,7 @@ export default async function handler(
       ON UTI.week_day = WEEKDAY(DATE_ADD(S.date, INTERVAL 1 DAY))
 
     WHERE S.user_id = ${user.id}
+      AND UTI.user_id = ${user.id}
       AND DATE_FORMAT(S.date, "%Y-%m") = ${`${year}-${month}`}
 
     GROUP BY EXTRACT(DAY FROM S.DATE),
