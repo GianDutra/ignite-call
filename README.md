@@ -51,7 +51,7 @@ To create the website, the following was used:
 - [x] Book a meeting on google calendar and create a google meet
 
 ## How to use the website:
-Step 1 - Go to the website (here's the [link you'll provide]), choose a username, and click on "Reserve."
+Step 1 - Go to the website **[here](https://ignite-call-giandutra.vercel.app)**, choose a username, and click on "Reserve | Reservar"
 
 Step 2 - After that, you need to confirm the username and provide your real name (which will be displayed to others).
 
