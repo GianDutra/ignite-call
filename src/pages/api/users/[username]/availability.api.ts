@@ -11,10 +11,14 @@ export default async function handler(
   }
 
   const username = String(req.query.username)
-  const { date } = req.query
+  const { date, userTimeZone } = req.query
 
   if (!date) {
     return res.status(400).json({ message: 'Date no provided.' })
+  }
+
+  if (!userTimeZone) {
+    return res.status(400).json({ message: 'User Time not provided.' })
   }
 
   const user = await prisma.user.findUnique({
@@ -74,7 +78,9 @@ export default async function handler(
       (blockedTime) => blockedTime.date.getHours() === time,
     )
 
-    const isTimeInPast = referenceDate.set('hour', time).isBefore(new Date())
+    const isTimeInPast = referenceDate
+      .set('hour', time + Number(userTimeZone))
+      .isBefore(new Date())
 
     return !isTimeBlocked && !isTimeInPast
   })
