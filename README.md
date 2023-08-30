@@ -23,7 +23,7 @@
 
 To create the website, the following was used:
 
-#### **Website**  ([NextJS](https://nextjs.org/)  +  ([NodeJS](https://nodejs.org) + [React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### **Website**  ([NextJS](https://nextjs.org/)  +  [NodeJS](https://nodejs.org) + [React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
 - **[PhosphorIcons](https://phosphoricons.com/)**
 - **[Prisma](https://www.prisma.io/)**
 - **[MySQL](https://www.mysql.com/)**
