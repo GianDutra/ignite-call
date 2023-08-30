@@ -1,5 +1,5 @@
 # Ignite Call (Full-stack Responsive Website)
-[:brazil: Video Tutorial](https://www.youtube.com/watch?v=vkOblTUN2MA)
+[:brazil: Video Tutorial](https://www.youtube.com/watch?v=DvPkINeHyL4)
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/GianDutra/ignite-call?color=%2304D361">
 
