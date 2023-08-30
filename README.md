@@ -1,5 +1,5 @@
 # Ignite Call (Full-stack Responsive Website)
-
+[:brazil: Video Tutorial](https://www.youtube.com/watch?v=vkOblTUN2MA)
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/GianDutra/ignite-call?color=%2304D361">
 
@@ -17,7 +17,7 @@
 <img src="./.github/1.png" alt="ignite-call" title="ignite-call">
 <img src="./.github/2.png" alt="ignite-call" title="ignite-call">
 <img src="./.github/3.png" alt="ignite-call" title="ignite-call">
-> Project developed during the ReactJS Ignite Course from Rocketseat.
+> Project developed during the ReactJS Ignite Course from Rocketseat. 
 
 ## Tech Stack
 
